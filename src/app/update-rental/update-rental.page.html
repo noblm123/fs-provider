@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>updateRental</ion-title>
+    <ion-buttons slot="update-rental">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Update Rental</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  
 </ion-content>
+
+<div>
+  <ion-list>
+ <ion-button (click)="navToExisingRentals()" fill="outline" size="small">Existing Rentals</ion-button>
+ <ion-button (click)="navToNewRental()" fill="outline" size="small">New Rentals</ion-button>
+ <ion-button (click)="navToRentalDetails()" fill="outline" size="small">Rental Details</ion-button>
+ <ion-button (click)="navToUpdateRental()" fill="outline" size="small">Update Rental</ion-button>
+ </ion-list>
+ </div>

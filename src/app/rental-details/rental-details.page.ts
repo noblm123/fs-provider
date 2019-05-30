@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-rental-details',
   templateUrl: './rental-details.page.html',
   styleUrls: ['./rental-details.page.scss'],
 })
-export class RentalDetailsPage implements OnInit {
+export class RentalDetailsPage{
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
-  ngOnInit() {
+  navToNewRental() {
+    this.navCtrl.navigateForward("new-rental");
+  }
+  navToRentalDetails() {
+    this.navCtrl.navigateForward("rental-details");
+  }
+  navToUpdateRental() {
+    this.navCtrl.navigateForward("update-rental");
+  }
+  navToExistingRentals() {
+    this.navCtrl.navigateForward("existing-rentals");
   }
 
 }
