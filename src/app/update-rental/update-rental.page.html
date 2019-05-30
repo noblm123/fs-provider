@@ -8,8 +8,16 @@
 </ion-header>
 
 <ion-content>
-  
-</ion-content>
+        <div class="ion-padding">
+        <ion-input placeholder="Country/Region"></ion-input>
+        <ion-input placeholder="Street Address"></ion-input>
+        <ion-input placeholder="Apt, Suite. (optional)"></ion-input>
+        <ion-input placeholder="City"></ion-input>
+        <ion-input placeholder="State"></ion-input>
+        <ion-input placeholder="Zip Code"></ion-input>
+        <ion-button (click)="navToExisingRentals()" color="danger">Update</ion-button>
+      </div>
+
 
 <div>
   <ion-list>
@@ -19,3 +27,5 @@
  <ion-button (click)="navToUpdateRental()" fill="outline" size="small">Update Rental</ion-button>
  </ion-list>
  </div>
+
+</ion-content>
