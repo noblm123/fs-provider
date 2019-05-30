@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-new-rental',
   templateUrl: './new-rental.page.html',
   styleUrls: ['./new-rental.page.scss'],
 })
-export class NewRentalPage implements OnInit {
+export class NewRentalPage {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
-  ngOnInit() {
-  }
+   
+  
 
 }
